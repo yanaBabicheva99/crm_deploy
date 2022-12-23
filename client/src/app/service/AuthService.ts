@@ -11,7 +11,7 @@ export interface ISignIn {
 export const authAPI = createApi({
     reducerPath: 'authAPI',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://80/api/auth/',
+        baseUrl: 'https://80/api/auth/',
     }),
     endpoints: (build) => ({
         signUp: build.mutation<IUser, Omit<IUser, '_id' | '__v' | 'address'>>({
